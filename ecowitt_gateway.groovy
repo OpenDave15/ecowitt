@@ -55,6 +55,7 @@
  *              it will always show at the bottom of the list)
  * 2020.06.04 - Added the ability to enter the MAC address directly as a DNI in the parent device creation page
  * 2020.06.05 - Added support for both MAC and IP addresses (MACs don't work across VLANs)
+ * 2020.06.06 - Added import URL for easier update
  */
 
 public static String version() { return "v1.6.23"; }
@@ -62,7 +63,7 @@ public static String version() { return "v1.6.23"; }
 // Metadata -------------------------------------------------------------------------------------------------------------------
 
 metadata {
-  definition(name: "Ecowitt WiFi Gateway", namespace: "mircolino", author: "Mirco Caramori") {
+  definition(name: "Ecowitt WiFi Gateway", namespace: "mircolino", author: "Mirco Caramori", importUrl: "https://raw.githubusercontent.com/mircolino/ecowitt/master/ecowitt_gateway.groovy") {
     capability "Sensor";
 
     command "resyncSensors";
